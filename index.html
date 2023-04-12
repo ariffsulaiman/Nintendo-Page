@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Stardew Valley Store Page</title>
+  </head>
+  <body>
+
+
+    <section id="header" class="">
+      <div class="z-20 fixed lg:hidden bg-red-600 h-12 w-full flex items-center justify-between pr-4">
+        <img src="images/Nintendo.svg.png" alt="nintendo-logo" class="h-8">
+        <p class="text-white inline-block text-xs font-bold">My Nintendo Store</p>
+      </div>
+
+      <div class="z-20 hidden fixed lg:block w-full bg-white">
+
+        <div class="lg:flex justify-between pr-4 border-b-2">
+
+          <!-- LEFT HAND SIDE HEADER -->
+
+          <div class="flex items-center">
+            <img src="images/Nintendo.svg.png" alt="nintendo-logo" class="h-14 w-32 bg-red-600 inline-block">
+            <!-- SEARCH BAR -->
+            <div class="ml-4 lg:w-96">
+              <div class="relative flex w-full flex-wrap items-stretch">
+                <input
+                  type="search"
+                  class="relative m-0 block w-[1px] min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="button-addon2" />
+            
+                <!--Search icon-->
+                <span
+                  class="input-group-text hover:cursor-pointer flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+                  id="basic-addon2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- RIGHT HAND SIDE HEADER -->
+          
+          <div class="flex justify-between space-x-4">
+            
+            <div class="flex items-center space-x-2">
+              <img src="images/support-regular-24.png" class="h-5" alt=""><p>Support</p>
+            </div>
+          
+            <div class="flex items-center space-x-2 ">
+              <img src="images/heart-solid-24.png" class="h-5" alt=""> <p>Wishlist</p>
+            </div>
+
+            <div class="flex items-center space-x-2 ">
+              <img src="images/cart-solid-24.png" class="h-5" alt=""> <p>Cart</p>
+            </div>
+
+            <div class="flex items-center space-x-2 ">
+              <img src="images/user-solid-24.png" class="h-5" alt=""> <p>Log In / Sign Up</p>
+            </div>
+          
+          </div>  
+
+        </div>
+
+        <!-- DROPDOWNS -->
+        <div class="hidden md:flex">
+          <nav
+          class="relative flex w-full items-center justify-center py-2 text-neutral-600  lg:flex-wrap lg:justify-start"
+          data-te-navbar-ref>
+          <div class="px-6 mx-auto">
+            <button
+              class="border-0 bg-transparent py-3 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+              type="button"
+              data-te-collapse-init
+              data-te-target="#navbarSupportedContentY"
+              aria-controls="navbarSupportedContentY"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="[&>svg]:w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-8 w-8">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+              id="navbarSupportedContentY"
+              data-te-collapse-item>
+              <ul class="flex flex-row justify-center space-x-4" data-te-navbar-nav-ref>
+                <!-- Dropdown: My Nintendo Store -->
+                <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                  <a
+                    class="flex items-center whitespace-nowrap py-2 pr-2 transition duration-150 ease-in-out lg:px-2"
+                    href="#"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    type="button"
+                    id="dropdownMenuButtonX"
+                    data-te-dropdown-toggle-ref
+                    aria-expanded="false"
+                    data-te-nav-link-ref
+                    >My Nintendo Store
+                    <span class="ml-2 w-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="h-5 w-5">
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
+                  <div
+                    class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButtonY"
+                    data-te-dropdown-menu-ref>
+                    <div class="px-6 py-5 lg:px-8">
+                      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Lorem ipsum
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Dolor sit</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Amet consectetur</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Adipisicing elit</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Explit voluptas
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Perspiciatis quo</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Laudantium maiores</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Provident dolor</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Iste quaerato
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Est iure</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Praesentium</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Laboriosam</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Cras justo odio
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Saepe</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Vel alias</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Sunt doloribus</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cum dolores</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Dropdown: Games -->
+                <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                  <a
+                    class="flex items-center whitespace-nowrap py-2 pr-2 transition duration-150 ease-in-out lg:px-2"
+                    href="#"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    type="button"
+                    id="dropdownMenuButtonX"
+                    data-te-dropdown-toggle-ref
+                    aria-expanded="false"
+                    data-te-nav-link-ref
+                    >Games
+                    <span class="ml-2 w-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="h-5 w-5">
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
+                  <div
+                    class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButtonY"
+                    data-te-dropdown-menu-ref>
+                    <div class="px-6 py-5 lg:px-8">
+                      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Lorem ipsum
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Dolor sit</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Amet consectetur</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Adipisicing elit</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Explit voluptas
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Perspiciatis quo</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Laudantium maiores</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Provident dolor</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Iste quaerato
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Est iure</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Praesentium</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Laboriosam</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Cras justo odio
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Saepe</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Vel alias</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Sunt doloribus</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cum dolores</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Dropdown: Nintendo Switch -->
+                <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                  <a
+                    class="flex items-center whitespace-nowrap py-2 pr-2 transition duration-150 ease-in-out lg:px-2"
+                    href="#"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    type="button"
+                    id="dropdownMenuButtonX"
+                    data-te-dropdown-toggle-ref
+                    aria-expanded="false"
+                    data-te-nav-link-ref
+                    >Nintendo Switch
+                    <span class="ml-2 w-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="h-5 w-5">
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
+                  <div
+                    class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButtonY"
+                    data-te-dropdown-menu-ref>
+                    <div class="px-6 py-5 lg:px-8">
+                      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Lorem ipsum
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Dolor sit</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Amet consectetur</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Adipisicing elit</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Explit voluptas
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Perspiciatis quo</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Laudantium maiores</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Provident dolor</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Iste quaerato
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Est iure</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Praesentium</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Laboriosam</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Cras justo odio
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Saepe</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Vel alias</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Sunt doloribus</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cum dolores</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- News & Events -->
+                <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                  <a
+                    class="flex items-center whitespace-nowrap py-2 pr-2 transition duration-150 ease-in-out lg:px-2"
+                    href="#"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    type="button"
+                    id="dropdownMenuButtonX"
+                    data-te-dropdown-toggle-ref
+                    aria-expanded="false"
+                    data-te-nav-link-ref
+                    >News & Events
+                    <span class="ml-2 w-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="h-5 w-5">
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
+                  <div
+                    class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButtonY"
+                    data-te-dropdown-menu-ref>
+                    <div class="px-6 py-5 lg:px-8">
+                      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Lorem ipsum
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Dolor sit</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Amet consectetur</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Adipisicing elit</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Explit voluptas
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Perspiciatis quo</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Laudantium maiores</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Provident dolor</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Iste quaerato
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Est iure</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Praesentium</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Laboriosam</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Cras justo odio
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Saepe</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Vel alias</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Sunt doloribus</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cum dolores</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Play Nintendo -->
+                <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                  <a
+                    class="flex items-center whitespace-nowrap py-2 pr-2 transition duration-150 ease-in-out lg:px-2"
+                    href="#"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    type="button"
+                    id="dropdownMenuButtonX"
+                    data-te-dropdown-toggle-ref
+                    aria-expanded="false"
+                    data-te-nav-link-ref
+                    >Play Nintendo
+                    <span class="ml-2 w-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="h-5 w-5">
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
+                  <div
+                    class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                    aria-labelledby="dropdownMenuButtonY"
+                    data-te-dropdown-menu-ref>
+                    <div class="px-6 py-5 lg:px-8">
+                      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Lorem ipsum
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Dolor sit</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Amet consectetur</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Adipisicing elit</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Explit voluptas
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Perspiciatis quo</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Laudantium maiores</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Provident dolor</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Iste quaerato
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cras justo odio</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Est iure</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Praesentium</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Laboriosam</a
+                          >
+                        </div>
+                        <div>
+                          <p
+                            class="block w-full border-b border-neutral-200 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-neutral-500 dark:text-white">
+                            Cras justo odio
+                          </p>
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Saepe</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Vel alias</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full border-b border-neutral-200 px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:border-neutral-500 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Sunt doloribus</a
+                          >
+                          <a
+                            href="#!"
+                            aria-current="true"
+                            class="block w-full px-6 py-2 transition duration-150 ease-in-out hover:bg-neutral-50 hover:text-neutral-700 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            >Cum dolores</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        </div>
+      
+
+      </div>
+
+    </section>
+
+
+
+    <section class="absolute top-[49px] lg:top-[114px] w-full">
+
+      <!-- FREE SHIPPING AND COINS AREA -->
+
+      <div class="flex flex-col h-16 bg-gray-100">
+        <div class="flex justify-center space-x-4 my-auto">
+
+          <div class="flex items-center space-x-2 ">
+            <img src="images/truck-solid-24.png" class="hidden sm:block h-6" alt="">
+            <p class="text-center"><span class="font-bold">Free shipping</span> on orders $50 or more. <span class="underline hover:cursor-pointer"> Restrictions apply.</span></p>
+          </div>
+
+          <div class="hidden lg:flex items-center space-x-2 border-gray-400 border-l-2 pl-4">
+            <img src="images/coin-stack-solid-24.png" class="h-6" alt="">
+            <p class="">Earn My Nintendo Points on digital games</p>
+          </div>
+          
+        </div>
+      </div>
+
+    
+      <!-- GAME SECTION -->
+
+      <div class="w-full px-4 pt-4 pb-16 md:px-16">
+
+        <!-- BREADCRUMBS -->
+      <nav class="bg-grey-light w-full rounded-md font-semibold text-xs mb-4 ">
+        <ol class="list-reset flex">
+          <li>
+            <a
+              href="#"
+              class=" transition duration-150 ease-in-out text-slate-500"
+              >Store</a
+            >
+          </li>
+          <li>
+            <span class="mx-2 text-neutral-500 dark:text-neutral-400">></span>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-slate-500"
+              >Games</a
+            >
+          </li>
+          <li>
+            <span class="mx-2 text-neutral-500 dark:text-neutral-400">></span>
+          </li>
+          <li class="">Stardew Valley</li>
+        </ol>
+      </nav>
+
+
+        <!-- GAME'S DETAILS -->
+      <div class="flex flex-col space-y-8 md:flex-row md:space-y-0 md:justify-between">
+
+          <!-- CAROUSEL -->
+      <div
+      id="carouselExampleControls"
+      class="relative md:w-1/2"
+      data-te-carousel-init
+      data-te-carousel-slide>
+      <!--Carousel items-->
+      <div
+        class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <!--First item-->
+        <div
+          class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item
+          data-te-carousel-active>
+          <img
+            src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/en_US/games/switch/s/stardew-valley-switch/hero"
+            class="block w-full"
+            alt="Wild Landscape" />
+        </div>
+        <!--Second item-->
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <img
+            src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.3499999046325684/c_scale,w_700/ncom/en_US/games/switch/s/stardew-valley-switch/screenshot-gallery/screenshot01"
+            class="block w-full"
+            alt="Camera" />
+        </div>
+        <!--Third item-->
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <img
+            src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.3499999046325684/c_scale,w_700/ncom/en_US/games/switch/s/stardew-valley-switch/screenshot-gallery/screenshot04"
+            class="block w-full"
+            alt="Exotic Fruits" />
+        </div>
+      </div>
+    
+      <!--Carousel controls - prev item-->
+      <button
+        class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        type="button"
+        data-te-target="#carouselExampleControls"
+        data-te-slide="prev">
+        <span class="inline-block h-8 w-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </span>
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Previous</span
+        >
+      </button>
+      <!--Carousel controls - next item-->
+      <button
+        class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        type="button"
+        data-te-target="#carouselExampleControls"
+        data-te-slide="next">
+        <span class="inline-block h-8 w-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </span>
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Next</span
+        >
+      </button>
+      </div>
+
+          <!-- DETAILS -->
+      <div class="flex flex-col space-y-6">
+        <p class="font-thin border-l-2 border-red-500 pl-2">Nintendo Switch</p>
+        <p class="font-bold text-2xl">Stardew Valley</p>
+        <div class="flex justify-between">
+          <p class="font-bold text-2xl">$14.99</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 99, 71, 0.5);"><path d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"></path></svg>
+        </div>
+        <p class="text-xs">Eligible for up to 75 Gold Points</p>
+        <button class="bg-red-600 hover:bg-red-800 h-20 text-white text-lg font-bold rounded-md">Direct Download</button>
+        <p class="text-xs">This item will be sent to your system automatically after purchase.</p>
+      </div>
+      </div>
+
+      </div>
+
+
+      <!-- GAME DESCRIPTION -->
+      <div class="px-4 md:px-16 py-16 flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-8 md:items-start">
+      <div class="">
+        <p class="text-lg font-bold">You're moving to the valley...</p>
+        <p>You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won't be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared. The community center, once the town’s most vibrant hub of activity, now lies in shambles. But the valley seems full of opportunity. With a little dedication, you might just be the one to restore Stardew Valley to greatness!</p>
+        <p class="text-xs my-5">Software description provided by the publisher.</p>
+        <button class="bg-red-600 hover:bg-red-800 h-20 text-white text-lg font-bold rounded-md px-4">Explore this game's official website</button>
+      </div>
+
+      <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.3499999046325684/c_scale,w_600/ncom/en_US/games/switch/s/stardew-valley-switch/hero" class="object-contain md:w-1/2" alt="">
+
+      
+
+    </div>
+    
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
